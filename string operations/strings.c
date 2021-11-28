@@ -63,7 +63,7 @@ int main()
     //note- all the functions modify the value of length variable and the strings.
     while(1)
     {
-        printf("Enter 1 to reverse string,\nEnter 2 to delete a character,\nEnter 3 to insert character,\nEnter -1 to exit");
+        printf("Enter 1 to reverse string,\nEnter 2 to delete a character,\nEnter 3 to insert character,\nEnter 4 to print string\nEnter -1 to exit");
         int input;
         printf("\n");
         scanf("%d", &input);
@@ -83,6 +83,10 @@ int main()
         else if(input == 2)
         {
             deleteChar(str, &length);
+        }
+        else if (input == 4)
+        {
+            printf("%s\n", str);
         }
     }
 }
